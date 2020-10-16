@@ -1,0 +1,12 @@
+BODY {
+	margin: 0px;
+	padding: 0px;
+	color: black;
+	font-family: Trebuchet MS, verdana, arial, sans-serif; 
+	font-size: xx-small;
+}
+
+.ajaxLoadingStatusClass {
+	font-size: xx-small;
+	color: red;
+}

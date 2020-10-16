@@ -1,0 +1,296 @@
+/* StyleSheet.css */
+BODY {
+	margin: 0px;
+	padding: 0px;
+	background-color: white;
+	color: black;
+	font-family: Trebuchet MS, verdana, arial, sans-serif; 
+	font-size: small;
+	background-image: url(/app/flash/images/waterBubbleBlue.jpg);
+}
+
+.reassignCategoriesClass {
+	font-size: xx-small;
+	color: black;
+	overflow: auto;
+	border: thin solid black;
+	height: 302px;
+	width: 300px;
+	max-height: 300px;
+}
+
+.forgotPasswordButtonClassFF {
+	font-size: xx-small;
+	font-weight: bold;
+	text-align: left;
+	color: black;
+	width: 120px;
+}
+
+.loginButtonClassFF {
+	font-size: xx-small;
+	font-weight: bold;
+	text-align: left;
+	color: black;
+	width: 45px;
+}
+
+.premiumButtonClassFF {
+	font-size: xx-small;
+	font-weight: bold;
+	text-align: left;
+	color: black;
+	width: 120px;
+}
+
+.registerButtonClassFF {
+	font-size: xx-small;
+	font-weight: bold;
+	text-align: left;
+	color: black;
+	width: 65px;
+}
+
+.registerButtonClass3FF {
+	font-size: xx-small;
+	font-weight: bold;
+	text-align: left;
+	color: black;
+	width: 88px;
+}
+
+.buttonClass {
+	font-size: xx-small;
+	font-weight: bold;
+}
+
+.buttonClassFF {
+	font-size: xx-small;
+	font-weight: bold;
+}
+
+.buttonMenuClass {
+	font-size: xx-small;
+	font-weight: bold;
+}
+
+.buttonMenuClassFF {
+	font-size: xx-small;
+	text-align: left;
+}
+
+.buttonAdminClass {
+	font-size: xx-small;
+	font-weight: bold;
+	background: Lime;
+}
+
+.buttonAdminFunctionClass {
+	font-size: xx-small;
+	width: 60px;
+	background: Lime;
+}
+
+.buttonAdminFunctionClassFF {
+	font-size: xx-small;
+	width: 60px;
+	background: Lime;
+}
+
+.buttonDirectoryClass {
+	font-size: xx-small;
+	width: 350px;
+	text-align: left;
+}
+
+.buttonDirectoryClassFF {
+	font-size: xx-small;
+	width: 350px;
+	text-align: left;
+}
+
+.buttonArchivesClass {
+	font-size: xx-small;
+	width: 300px;
+	text-align: left;
+}
+
+.buttonArchivesClassFF {
+	font-size: xx-small;
+	width: 300px;
+	text-align: left;
+}
+
+.boldPromptTextClass {
+	font-size: small;
+	font-weight: bold;
+}
+
+.errorStatusClass {
+	font-size: small;
+	color: red;
+}
+
+.errorStatusBoldClass {
+	font-size: small;
+	color: red;
+	font-weight: bold;
+}
+
+.onholdStatusClass {
+	font-size: small;
+	color: green;
+}
+
+.onholdStatusBoldClass {
+	font-size: small;
+	color: green;
+	font-weight: bold;
+}
+
+.onholdStatusSmallBoldClass {
+	font-size: small;
+	color: green;
+	font-weight: bold;
+}
+
+.currentCategoryBoldClass {
+	font-size: small;
+	color: green;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.normalStatusClass {
+	font-size: small;
+	color: blue;
+}
+
+.adminAddEntryClass {
+	font-size: small;
+	color: blue;
+}
+
+.normalSmallStatusBoldClass {
+	font-size: small;
+	color: blue;
+	font-weight: bold;
+}
+
+.normalStatusBoldClass {
+	font-size: small;
+	color: blue;
+	font-weight: bold;
+}
+
+.normalx11StatusBoldClass {
+	font-size: small;
+	color: black;
+	font-weight: bold;
+}
+
+.menux11StatusBoldClass {
+	font-size: small;
+	color: white;
+	font-weight: bold;
+}
+
+.normalx11TextClass {
+	font-size: small;
+	color: black;
+}
+
+.normalSiteContentTextClass {
+	font-size: medium;
+	color: black;
+}
+
+.normalDetailedContentTextClass {
+	font-size: small;
+	color: black;
+}
+
+.normalx9TextClass {
+	font-size: xx-small;
+	color: black;
+}
+
+.normalx12StatusBoldClass {
+	font-size: small;
+	color: blue;
+	font-weight: bold;
+}
+
+.titlex12BoldClass {
+	font-size: small;
+	color: black;
+	font-weight: bold;
+}
+
+.titlex12GreenBoldClass {
+	font-size: small;
+	color: green;
+	font-weight: bold;
+}
+
+.titlex10GreenClass {
+	font-size: xx-small;
+	color: green;
+}
+
+.titlex10BlueClass {
+	font-size: xx-small;
+	color: blue;
+}
+
+.titlex12GreenClass {
+	font-size: small;
+	color: green;
+}
+
+.titlex12BlueClass {
+	font-size: small;
+	color: blue;
+}
+
+.titlex12BlueBoldClass {
+	font-size: small;
+	color: blue;
+	font-weight: bold;
+}
+
+.titlex12BlackBoldClass {
+	font-size: small;
+	color: black;
+	font-weight: bold;
+}
+
+.titleSmallBlackBoldClass {
+	font-size: small;
+	color: black;
+	font-weight: bold;
+}
+
+.textClass {
+	font-size: xx-small;
+}
+
+.textSmallClass {
+	font-size: xx-small;
+}
+
+.textBoldClass {
+	font-size: small;
+	font-weight: bold;
+}
+
+.textEntryClass {
+	font-size: xx-small;
+}
+
+.workingStatusClass {
+	font-size: small;
+	color: black;
+	font-weight: bold;
+}
+

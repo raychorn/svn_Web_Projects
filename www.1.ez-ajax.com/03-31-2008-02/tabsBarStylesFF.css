@@ -1,0 +1,90 @@
+#tabNavigation {
+	background: #F90;
+	border-bottom: 1px solid #000;
+	border-top: 1px solid #000;
+	list-style: none outside none;
+	color: inherit;
+	margin: 0;
+	padding: 0;
+	height: 20px;
+	margin-top: -5px;
+}
+
+html #tabNavigation/* */ {
+	padding: 4px 0 4px 0
+}
+
+html>body #tabNavigation {
+	margin: 0;
+	padding: 4px 0 4px 0
+}
+
+#tabNavigation li {
+	display: inline;
+	line-height: 2em;
+	float: left;
+}
+
+#tabNavigation li div {
+	display: none;
+}
+
+#tabNavigation a, #tabNavigation a:link, #tabNavigation a:visited {
+	background: #C60;
+	border-bottom: 1px solid #000;
+	border-right: 1px solid #000;
+	color: #FFF;
+	cursor: pointer;
+	height: 1em;
+	margin: -1px 0 -1px 0;
+	padding: 3px 6px 3px 6px;
+	text-decoration: none
+}
+
+html #tabNavigation a/* */, html #tabNavigation a:link/* */, html #tabNavigation a:visited/* */ {
+	border-bottom: none;
+	height: auto;
+	margin: 0
+}
+
+html>body #tabNavigation a, html>body #tabNavigation a:link, html>body #tabNavigation a:visited {
+	border-bottom: none;
+	padding: 4px 6px 4px 6px
+}
+
+\head+body #tabNavigation a, \head+body #tabNavigation a:link, \head+body #tabNavigation a:visited {
+	padding: 3px 6px 3px 6px
+}
+
+#tabNavigation a:hover {
+	background: #999;
+	color: inherit
+}
+
+#tabNavigation a:active {
+	background: #CCC;
+	border-right: 1px solid #000;
+	color: inherit
+}
+
+#tabNavigation .selectedTab a, #tabNavigation .selectedTab a:link, #tabNavigation .selectedTab a:visited, #tabNavigation .selectedTab a:hover {
+	background: #F90;
+	border-bottom: none;
+	border-right: 1px solid #000;
+	border-top: 1px solid #000;
+	color: #000;
+	cursor: text;
+	padding: 3px 5px 4px 5px;
+}
+
+html>body #tabNavigation .selectedTab a, html>body #tabNavigation .selectedTab a:link, html>body #tabNavigation .selectedTab a:visited {
+	padding: 4px 5px 5px 5px
+}
+
+\head+body #tabNavigation .selectedTab a, \head+body #tabNavigation .selectedTab a:link, \head+body #tabNavigation .selectedTab a:visited, \head+body #tabNavigation .selectedTab a:hover {
+	padding: 3px 5px 4px 5px
+}
+
+.fixTabsIE {
+	visibility: hidden
+}

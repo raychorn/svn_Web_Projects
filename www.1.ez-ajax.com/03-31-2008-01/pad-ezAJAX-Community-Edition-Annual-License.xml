@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML_DIZ_INFO>
+	<MASTER_PAD_VERSION_INFO>
+		<MASTER_PAD_VERSION>2.02</MASTER_PAD_VERSION>
+		<MASTER_PAD_EDITOR>PADGen 2.0.2.30 http://www.padgen.org</MASTER_PAD_EDITOR>
+		<MASTER_PAD_INFO>Portable Application Description, or PAD for short, is a data set that is used by shareware authors to disseminate information to anyone interested in their software products. To find out more go to http://www.asp-shareware.org/pad</MASTER_PAD_INFO>
+	</MASTER_PAD_VERSION_INFO>
+	<Company_Info>
+		<Company_Name>Hierarchical Applications Limited, Inc.</Company_Name>
+		<Address_1>1630 North Main Street #264</Address_1>
+		<Address_2 />
+		<City_Town>Walnut Creek</City_Town>
+		<State_Province>CA</State_Province>
+		<Zip_Postal_Code>94596</Zip_Postal_Code>
+		<Country>USA</Country>
+		<Company_WebSite_URL>http://www.ez-ajax.com</Company_WebSite_URL>
+		<Contact_Info>
+			<Author_First_Name>Ray</Author_First_Name>
+			<Author_Last_Name>Horn</Author_Last_Name>
+			<Author_Email>sales@ez-ajax.com</Author_Email>
+			<Contact_First_Name>Ray</Contact_First_Name>
+			<Contact_Last_Name>Horn</Contact_Last_Name>
+			<Contact_Email>raychorn@ez-ajax.com</Contact_Email>
+		</Contact_Info>
+		<Support_Info>
+			<Sales_Email>sales@ez-ajax.com</Sales_Email>
+			<Support_Email>support@ez-ajax.com</Support_Email>
+			<General_Email>sales@ez-ajax.com</General_Email>
+			<Sales_Phone />
+			<Support_Phone />
+			<General_Phone>707-322-9842</General_Phone>
+			<Fax_Phone />
+		</Support_Info>
+	</Company_Info>
+	<Program_Info>
+		<Program_Name>ezAJAX Community Edition-Annual License</Program_Name>
+		<Program_Version>0.93</Program_Version>
+		<Program_Release_Month>11</Program_Release_Month>
+		<Program_Release_Day>08</Program_Release_Day>
+		<Program_Release_Year>2006</Program_Release_Year>
+		<Program_Cost_Dollars>195.00</Program_Cost_Dollars>
+		<Program_Cost_Other_Code />
+		<Program_Cost_Other />
+		<Program_Type>Commercial</Program_Type>
+		<Program_Release_Status>New Release</Program_Release_Status>
+		<Program_Install_Support>Install Only</Program_Install_Support>
+		<Program_OS_Support>Windows2000,WinXP,Windows2003</Program_OS_Support>
+		<Program_Language>English</Program_Language>
+		<Program_Change_Info />
+		<Program_Specific_Category>Development Tools</Program_Specific_Category>
+		<Program_Category_Class>Web Development::Java &amp; JavaScript</Program_Category_Class>
+		<Program_System_Requirements>ColdFusion MX 7 Developer's Edition (FREE)</Program_System_Requirements>
+		<File_Info>
+			<File_Size_Bytes>6000</File_Size_Bytes>
+			<File_Size_K>5</File_Size_K>
+			<File_Size_MB>0.01</File_Size_MB>
+		</File_Info>
+		<Expire_Info>
+			<Has_Expire_Info>Y</Has_Expire_Info>
+			<Expire_Count>30</Expire_Count>
+			<Expire_Based_On>Days</Expire_Based_On>
+			<Expire_Other_Info>Runtime License is Required for use beyond 30 days.</Expire_Other_Info>
+			<Expire_Month />
+			<Expire_Day />
+			<Expire_Year />
+		</Expire_Info>
+	</Program_Info>
+	<Program_Descriptions>
+		<English>
+			<Keywords>ColdFusion, AJAX, JavaScript, Dojo Toolkit, games, charts, graphs, ASP, ASP.NET, C#.Net, SQL 2005, Adobe</Keywords>
+			<Char_Desc_45>ezAJAX Community Edition-Annual License</Char_Desc_45>
+			<Char_Desc_80>ezAJAX(tm) Community Edition Framework - Annual License</Char_Desc_80>
+			<Char_Desc_250>ezAJAX(tm) provides web developers with more than 10,000 lines of debugged cross-browser code they can use, reuse and redistribute to create stunning high-impact AJAX web apps with very little coding effort.</Char_Desc_250>
+			<Char_Desc_450>ezAJAX(tm) provides ColdFusion web developers with more than 10,000 lines of debugged cross-browser code they can use, reuse and redistribute to create stunning high-impact AJAX web apps with very little coding effort.  The ezAJAX(tm) Community Edition Framework is an end-to-end Application Development Shell that provides a very rapid development environment for AJAX application developers.</Char_Desc_450>
+			<Char_Desc_2000>ezAJAX(tm) provides ColdFusion web developers with more than 10,000 lines of debugged cross-browser code they can use, reuse and redistribute to create stunning high-impact AJAX web apps with very little coding effort.  The ezAJAX(tm) Community Edition Framework is an end-to-end Application Development Shell that provides a very rapid development environment for AJAX application developers.  The AJAX Engine that is integrated into ezAJAX(tm) provides for server fail-over that allows the application to maintain control even when the server is not online.  ezAJAX(tm) provides a robust error handling mechanism that reports all server errors to the appliction user using an integrated error handling system.</Char_Desc_2000>
+		</English>
+	</Program_Descriptions>
+	<Web_Info>
+		<Application_URLs>
+			<Application_Info_URL>http://www.ez-ajax.com</Application_Info_URL>
+			<Application_Order_URL>http://www.ez-ajax.com</Application_Order_URL>
+			<Application_Screenshot_URL>http://www.ez-ajax.com/ezAJAXScreenShot.gif</Application_Screenshot_URL>
+			<Application_Icon_URL>http://www.ez-ajax.com/ezAJAX-icon_32x32.gif</Application_Icon_URL>
+			<Application_XML_File_URL>http://www.ez-ajax.com/pad-ezAJAX-Community-Edition-Annual-License.xml</Application_XML_File_URL>
+		</Application_URLs>
+		<Download_URLs>
+			<Primary_Download_URL>http://www.1.ez-ajax.com/\downloads_433611211010024813/ezAJAX_Community+Enterprise_Editions_v093_30-Day_Trial.exe</Primary_Download_URL>
+			<Secondary_Download_URL>http://www.2.ez-ajax.com/\downloads_433611211010024813/ezAJAX_Community+Enterprise_Editions_v093_30-Day_Trial.exe</Secondary_Download_URL>
+			<Additional_Download_URL_1 />
+			<Additional_Download_URL_2 />
+		</Download_URLs>
+	</Web_Info>
+	<Permissions>
+		<Distribution_Permissions>Worldwide Distribution Rights are granted so long as the original Installer Program is the primary medium of delivery.</Distribution_Permissions>
+		<EULA>ezAJAX™ Community Edition License Agreement
+
+(1). This License Agreement covers the Community Edition for the ezAJAX™ Product which is distributed at no cost to non-commercial end-users who wish to perform a long-term evaluation or proof of concept trial.
+
+(2). ezAJAX™ Community Edition is a Limited-Use version of the Enterprise Edition that strictly limits the functionality of the Enterprise Edition to allow non-commercial end-users perform a long-term evaluation or proof of concept trial.  All other uses of the Community Edition are strictly prohibited.
+
+(3). Users who download and install the ezAJAX™ Community Edition agree to provide to Hierarchical Applications Limited, the owners of ezAJAX™, any AJAX Applications that may be produced using the Community Edition pursuant to using said applications to promote the ezAJAX™ Product Line in whatever manner as may be deemed appropriate by Hierarchical Applications Limited.  Those who refuse to provide copies of their ezAJAX™ Community Edition Applications, upon request, must uninstall their copies of this edition and cease using it.
+
+Definitions:
+
+(a). “AJAX Applications” means any software that references or uses any portion of the ezAJAX™ Community Edition.
+
+(b). “Commercial Use” means any use by any entity whether individual, business related or institution that results or may result in financial gain either directly or indirectly including but not limited to any web site, product or service that sells, advertises or promotes revenue-bearing products or services of any kind.  Non-commercial Use prohibits by definition any company or corporation or any agents of same who may seek to gain revenue through the direct or indirect use of the ezAJAX™ Community Edition including non-profit organizations whether or not they are engaged in for-profit activities.
+
+(c). “Software” means any object or source code provided by Hierarchical Applications Limited such as but not limited to ezAJAX™ Community Edition.
+
+(d). “Term” means the period of time from the moment you installed ezAJAX™ Community Edition until the 90th calendar day has expired at which time the Runtime License of the ezAJAX™ Community Edition will expire and becomes unable to be used until an Enterprise Edition Runtime License has been purchased and installed.
+
+(4). Non-Commercial
+
+Since you are provided with a “Non-Commercial” License you hereby represent and warrant that you will not use the Software for Commercial purposes for or on behalf of any entity that may be engaged in any kind of Commercial endeavor whether directly or indirectly.
+
+(5). Personal use
+
+Since you are provided with a “Personal Use License” you hereby represent and warrant that the AJAX Applications you create using Software will not sell, advertise or otherwise promote revenue-bearing products or services of any kind whether said revenue is generated directly or indirectly, or be used to administer or conduct the business of a commercial entity in any way.  If you are a Blogger, you may showcase your AJAX Applications on your own Blog Site or personal website that contains advertising, but only if the costs of establishing and maintaining the Blog or personal website are not directly funded by a commercial entity or any kind.  A Blog is defined as a personal website that provides updated headlines and news articles of other sites that are of interest to the owner of said Blog and also may include journal entries, commentaries and/or recommendations compiled by the publisher of the Blog.
+
+(6). Commercial Rates
+
+Should you use the Software for any purposes except as set forth above, fail to fully cooperate with Hierarchical Applications Limited in reporting your use or allowing the audit referenced below, or otherwise not comply with this Agreement Hierarchical Applications Limited shall have the irrevocable right to immediately terminate your rights to use the Software, charge you retail or commercial rates for your use and/or pursue any other remedies available to Hierarchical Applications Limited at law or in equity.
+
+(7). Customer Success Activities
+
+In consideration for this License, you agree to participate in the ezAJAX™ Customer Success Activities (“Activities”) defined  below related to the selection and/or implementation of the Software by you, and/or the website, application or content that you develop with the Software (the “Project”). Whether your use of the Software is featured in the Activities is subject to Hierarchical Applications Limited’s sole discretion.  You may be asked to review materials related to the Activities prior to publication where appropriate as determined by Hierarchical Applications Limited in its sole discretion.  Your review of the materials will be conducted in a reasonable and timely manner.  Activities shall include the following:
+
+(a). Marketing Presentations – Your name and, if applicable, trademarks may be used in ezAJAX™ marketing presentations and emails identifying you as an ezAJAX™ user.
+
+(b). ezAJAX™ Website – Your name, trademarks and quotes may be used on an ezAJAX™ web page identifying you as an ezAJAX™ user.  Additionally, a link to or screenshot of the Project you developed with the Software may be posted to an ezAJAX™ website at the discretion of Hierarchical Applications Limited.
+
+(c). Press Release – If requested by Hierarchical Applications Limited, you shall participate in a press release related to ezAJAX™ to the use of the Software, including providing a quote to be used in such press release.
+
+(d). Case Study – You shall document the benefits in using the Software for the production of a written or video case study (“Case Study”).  The Case Study may summarize the situations in which Software is used, benefits of Software and quantifiable time, money or other savings for you. Hierarchical Applications Limited may promote the Case Study in the following ways: post it to an ezAJAX™ website, link to it from other areas of an ezAJAX™ website, and send it to certain trade publications that cover ezAJAX™.
+
+(e). Demonstration Content – You shall fully cooperate with Hierarchical Applications Limited to allow the creation of demonstration and/or screenshots of the Project on an ezAJAX™ website, in a public demonstration or at press meetings, analyst meetings, trade shows and seminars and refrain of any intellectual property right related to the public demonstration as such.
+
+(f). License and Rights Grants – You hereby grant to Hierarchical Applications Limited, its successors, affiliates and assignees and those acting under its direction, a royalty-free, fully paid up, perpetual, irrevocable, world-wide license and rights, but not obligation, to use, edit, copy, modify, create derivative works, support, distribute in modified or unmodified form, market, publish, and sublicense all of the above rights with relation to, all or part of the Project, in any medium now known or invented in the future, in or in connection with an ezAJAX™ product or service or for Hierarchical Applications Limited generally.  Hierarchical Applications Limited has the right to use your name in connection with the Project.
+
+(8). Exclusions
+
+You shall have no right to receive updates (e.g. Patches, Service Packs) or Minor Versions or Major Versions hereunder.  If nevertheless Hierarchical Applications Limited does provide you with updates or upgrades, all use of such updates or upgrades shall be s set forth in the EULA (End User License Agreement), but will not create any further right to receive updates or upgrades or Major Versions.  You can neither claim any warranty regarding the Software nor hold Hierarchical Applications Limited liable for any damage or costs whatsoever arising from the use and/or possession of the Software, regardless the reason.  Hierarchical Applications Limited is not obligated to indemnify you for any claims whatsoever.
+
+(9). Information Feedback
+
+You will be required to provide Hierarchical Applications Limited with complete information on your use of the Software and your development of any websites, applications or content with the Software, pursuant to procedures to be defined by Hierarchical Applications Limited from time to time.  Upon the request from Hierarchical Applications Limited from time to time, you agree to provide Hierarchical Applications Limited with prompt notification of any updates relating to your use of the Software and your development of any websites, applications or content with the Software.
+
+(10). Copyrighted Materials
+
+You agree that ezAJAX™ was constructed using certain Copyrighted Materials such as but not limited to various forms of encryption or Intellectual Property Protection mechanisms that you will make no attempt to reverse engineer in any form or fashion including but not limited to the JavaScript Compiler methods or techniques you may come into contact with while using, installing or uninstalling the Software.
+
+(11). Transfer of this Agreement
+
+This agreement shall not be transferable to any other individuals or entities without specific written permission of Hierarchical Applications Limited.  Any such transfer of this agreement without said permission of Hierarchical Applications Limited shall cause this License Agreement to be terminated in which case the Software must be uninstalled and returned to Hierarchical Applications Limited with no further use allowed as set forth in this agreement.
+
+(12). Miscellaneous
+
+Except as expressly set forth herein, this agreement shall govern all use of the Software.  You agree that Hierarchical Applications Limited shall retain all rights set forth in this agreement, including those relating to an audit of your use and termination upon your breach of this agreement. In cooperating with Hierarchical Applications Limited for the audit referenced above, you agree to provide Hierarchical Applications Limited with any information, records or access that would indicate your Commercial Use or your status as a Commercial Entity.
+
+(13). Conversion of Community Edition License to Long-Term Runtime License
+
+Once a Long-Term Runtime License has been purchased and installed the community Edition ceases to be a Limited-Use product and may become eligible to be used for Commercial purposes so long as said "commercial" uses do not constitute competition with Hierarchical Applications Limited or any of its subsidiaries.  ezAJAX™ may not be used by web hosting services of any kind, for instance, regardless of whether or not a Long-Term Runtime License has been purchased.  ezAJAX™ Enterprise Edition may be used for any commercial purpose even if said use is in competition with Hierarchical Applications Limited so long as said use is not in violation of U.S. or International Copyright Laws.
+</EULA>
+	</Permissions>
+	<Affiliates>
+		<Affiliates_FORM>Y</Affiliates_FORM>
+		<Affiliates_VERSION>1.2</Affiliates_VERSION>
+		<Affiliates_URL>http://www.asp-shareware.org/pad/extensions/Affiliates.htm</Affiliates_URL>
+		<Affiliates_Information_Page>http://www.ez-ajax.com</Affiliates_Information_Page>
+		<Affiliates_Avangate_Order_Page />
+		<Affiliates_Avangate_Vendor_ID />
+		<Affiliates_Avangate_Product_ID />
+		<Affiliates_Avangate_Maximum_Commission_Rate />
+		<Affiliates_BMTMicro_Order_Page />
+		<Affiliates_BMTMicro_Vendor_ID />
+		<Affiliates_BMTMicro_Product_ID />
+		<Affiliates_BMTMicro_Maximum_Commission_Rate />
+		<Affiliates_clixGalore_Order_Page />
+		<Affiliates_clixGalore_Vendor_ID />
+		<Affiliates_clixGalore_Product_ID />
+		<Affiliates_clixGalore_Maximum_Commission_Rate />
+		<Affiliates_CommissionJunction_Order_Page />
+		<Affiliates_CommissionJunction_Vendor_ID />
+		<Affiliates_CommissionJunction_Product_ID />
+		<Affiliates_CommissionJunction_Maximum_Commission_Rate />
+		<Affiliates_DigiBuy_Order_Page />
+		<Affiliates_DigiBuy_Vendor_ID />
+		<Affiliates_DigiBuy_Product_ID />
+		<Affiliates_DigiBuy_Maximum_Commission_Rate />
+		<Affiliates_DigitalCandle_Order_Page />
+		<Affiliates_DigitalCandle_Vendor_ID />
+		<Affiliates_DigitalCandle_Product_ID />
+		<Affiliates_DigitalCandle_Maximum_Commission_Rate />
+		<Affiliates_Emetrix_Order_Page />
+		<Affiliates_Emetrix_Vendor_ID />
+		<Affiliates_Emetrix_Product_ID />
+		<Affiliates_Emetrix_Maximum_Commission_Rate />
+		<Affiliates_eSellerate_Order_Page />
+		<Affiliates_eSellerate_Vendor_ID />
+		<Affiliates_eSellerate_Product_ID />
+		<Affiliates_eSellerate_Maximum_Commission_Rate />
+		<Affiliates_Kagi_Order_Page />
+		<Affiliates_Kagi_Vendor_ID />
+		<Affiliates_Kagi_Product_ID />
+		<Affiliates_Kagi_Maximum_Commission_Rate />
+		<Affiliates_LinkShare_Order_Page />
+		<Affiliates_LinkShare_Vendor_ID />
+		<Affiliates_LinkShare_Product_ID />
+		<Affiliates_LinkShare_Maximum_Commission_Rate />
+		<Affiliates_NorthStarSol_Order_Page />
+		<Affiliates_NorthStarSol_Vendor_ID />
+		<Affiliates_NorthStarSol_Product_ID />
+		<Affiliates_NorthStarSol_Maximum_Commission_Rate />
+		<Affiliates_Order1_Order_Page />
+		<Affiliates_Order1_Vendor_ID />
+		<Affiliates_Order1_Product_ID />
+		<Affiliates_Order1_Maximum_Commission_Rate />
+		<Affiliates_Osolis_Order_Page />
+		<Affiliates_Osolis_Vendor_ID />
+		<Affiliates_Osolis_Product_ID />
+		<Affiliates_Osolis_Maximum_Commission_Rate />
+		<Affiliates_Plimus_Order_Page />
+		<Affiliates_Plimus_Vendor_ID />
+		<Affiliates_Plimus_Product_ID />
+		<Affiliates_Plimus_Maximum_Commission_Rate />
+		<Affiliates_Regnet_Order_Page />
+		<Affiliates_Regnet_Vendor_ID />
+		<Affiliates_Regnet_Product_ID />
+		<Affiliates_Regnet_Maximum_Commission_Rate />
+		<Affiliates_Regnow_Order_Page>http://www.regnow.com/softsell/nph-softsell.cgi?item=14605-1</Affiliates_Regnow_Order_Page>
+		<Affiliates_Regnow_Vendor_ID>v14605</Affiliates_Regnow_Vendor_ID>
+		<Affiliates_Regnow_Product_ID>14605-1</Affiliates_Regnow_Product_ID>
+		<Affiliates_Regnow_Maximum_Commission_Rate>60%</Affiliates_Regnow_Maximum_Commission_Rate>
+		<Affiliates_Regsoft_Order_Page />
+		<Affiliates_Regsoft_Vendor_ID />
+		<Affiliates_Regsoft_Product_ID />
+		<Affiliates_Regsoft_Maximum_Commission_Rate />
+		<Affiliates_ShareIt_Order_Page />
+		<Affiliates_ShareIt_Vendor_ID />
+		<Affiliates_ShareIt_Product_ID />
+		<Affiliates_ShareIt_Maximum_Commission_Rate />
+		<Affiliates_Shareasale_Order_Page />
+		<Affiliates_Shareasale_Vendor_ID />
+		<Affiliates_Shareasale_Product_ID />
+		<Affiliates_Shareasale_Maximum_Commission_Rate />
+		<Affiliates_SWReg_Order_Page />
+		<Affiliates_SWReg_Vendor_ID />
+		<Affiliates_SWReg_Product_ID />
+		<Affiliates_SWReg_Maximum_Commission_Rate />
+		<Affiliates_V-Share_Order_Page />
+		<Affiliates_V-Share_Vendor_ID />
+		<Affiliates_V-Share_Product_ID />
+		<Affiliates_V-Share_Maximum_Commission_Rate />
+		<Affiliates_VFree_Order_Page />
+		<Affiliates_VFree_Vendor_ID />
+		<Affiliates_VFree_Product_ID />
+		<Affiliates_VFree_Maximum_Commission_Rate />
+		<Affiliates_Yaskifo_Order_Page />
+		<Affiliates_Yaskifo_Vendor_ID />
+		<Affiliates_Yaskifo_Product_ID />
+		<Affiliates_Yaskifo_Maximum_Commission_Rate />
+	</Affiliates>
+	<ASP>
+		<ASP_FORM>Y</ASP_FORM>
+		<ASP_Member>Y</ASP_Member>
+		<ASP_Member_Number>06331</ASP_Member_Number>
+	</ASP>
+</XML_DIZ_INFO>

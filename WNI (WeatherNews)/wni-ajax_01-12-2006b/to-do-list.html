@@ -1,0 +1,27 @@
+<!--- To-Do List: --->
+
+<!--- Tabbed Debug Windows (one for each Gateway Instance being viewed) --->
+
+<!--- Stack the Activity Monitor displays - create using Gateway Object and display selectively --->
+
+<!--- Make sure the status bar activity does not show-up when in release mode. --->
+
+<!--- Architect method for passing Objects from server to client using standard Object constructor/destructor 
+via global var to temporaily hold the Object until it is no longer needed at which time the Object is simply
+discarded Q: Is this anything like JSON ? 
+
+JSON does not provide for "behaviors" to be passed from server to client and therefore does nothing to enhance
+encapsulation for AJAX Apps.
+
+_cache_AJAX_BehaviorObject = []; // each object has a unique ID (GUID - assigned by CF) - the cache holds ID to Object mapping
+_stack_AJAX_BehaviorObject = []; // stack holds all the ID's for the purposes of clean-up
+
+// object destructor provides easy means for cleaning-up the interface whenever the browser triggers onUnLoad event.
+
+Each AJAX_BehaviorObject might require many Query Objs from the server.
+
+Architect AJAX_BehaviorObject to be separate from Query Objects
+--->
+
+
+

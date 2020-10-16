@@ -1,0 +1,399 @@
+/* CSS items the end-users might not be able to deal with */
+
+td  { <cfoutput>#_css_default_font_family# #_css_default_font_size#</cfoutput> }
+
+ul.starburst {
+	list-style-image: url("<cfoutput>#_images_folder#</cfoutput>/starburst.gif");
+	list-style-position: outside;
+}
+
+img {
+	<cfif (_LayoutMode eq 0)>
+		border:none;
+	</cfif>
+	padding: 0px;
+	margin: 0px;
+}
+
+img.headerpic {
+	border-bottom: 1px solid #999;
+}
+
+/*---Upper Area---*/
+#topline p {
+	text-align: right;
+	color: white;
+	background-color: #1E77D3;
+	background-image: url("<cfoutput>#_images_folder#</cfoutput>header_bg.jpg");
+	background-repeat: repeat-y;
+	font-size: x-small;
+}
+
+#topline a {
+	border: 1px solid #1E77DE;
+	padding:1px;
+	text-decoration:none;
+	color: white; 
+}
+
+#topline a:hover{
+	border: 1px solid #CEDFF6;
+	background-color: #3484d7;
+	}
+
+/*---SEPG Section---*/
+#sepg_section {
+	background-color:#1E77D3;
+	background-image: url("<cfoutput>#_images_folder#</cfoutput>header_bg.jpg");
+	background-repeat: repeat-y;
+}
+
+#marquee_header {
+	background-color:#1E77D3;
+	background-image: url("<cfoutput>#_images_folder#</cfoutput>header_bg.jpg");
+	background-repeat: repeat-y;
+}
+
+#sepg_section a {
+	padding: 2px;
+	text-decoration:none;
+	color: white; 
+}
+
+#marquee_header marquee_section sepg_section_marquee_scroller marquee_scroller a {
+	padding: 2px;
+	text-decoration:none;
+	color: blue; 
+}
+
+<cfif (_AdminMode eq 1)>
+	#marqueeEditor_pane a {
+		padding: 2px;
+		text-decoration:none;
+		color: blue; 
+	}
+</cfif>
+
+#sepg_section a:hover{
+	background-color: #ccc;
+	border: 1px solid #999;
+	color: black; 
+}
+
+#marquee_section marquee {
+	padding: 0px;
+	text-decoration:none;
+	color: black; 
+	background-color: #FFFFBB;
+}
+
+#marquee_section marquee span {
+	font-size: 10px;
+	background-color: #FFFFBB;
+	color: black; 
+}
+
+#sepg_section p{
+	margin-bottom: 0px;
+	padding: 0px;
+	background-color:#1E77D3;
+	background-image: url("<cfoutput>#_images_folder#</cfoutput>header_bg.jpg");
+	background-repeat: repeat-y;
+}
+
+#sepg_links td {
+	background-color: #f1f1f1;
+}
+
+#sepg_links input {
+	background-color: #f1f1f1;
+}
+
+#sepg_links p {
+	padding: 5px;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
+	color: #999;
+	font-size: 10px;
+	line-height: 15px;
+	background-color: #f1f1f1;
+}
+
+#sepg_links a {
+	border: 1px solid #f1f1f1;
+	padding: 2px;
+	text-decoration:none;
+	color: black; 
+}
+
+#sepg_links a:hover{
+	background-color: #ccc;
+	border: 1px solid #999;
+}
+
+/*---Main Body Section---*/
+/*---The left menu---*/
+
+#maintext li {
+	padding: 1px;
+	/* this item causes ALL lists to be unordered - make this an option via the /Layout subsystem
+	list-style: disc;
+	*/
+	font-size: xx-small;
+}
+	
+#nav {
+	margin: 0px;
+	padding: 0px;
+	z-index: 32767;
+}
+
+#nav ul { /* all lists */
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	background: #3081e4;
+	z-index: 32767;
+}
+
+#nav li {
+	/* all list items */
+	position: relative;
+	float: <cfoutput>#_site_menu_floats#</cfoutput>;
+	width: 162px;
+	margin: 0px;
+	padding: 2px;
+	background: <cfoutput>#_site_menu_background_color#</cfoutput>;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	z-index: 32767;
+}
+
+#nav li.lastone { /*IE doesn't show border on first list*/
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	z-index: 32767;
+}
+
+#nav li ul { /* second-level lists and so on*/
+	position: absolute;
+	top: 0px;
+	<cfoutput>#_site_menu_orientation#</cfoutput>;
+	display:none;
+	border-bottom:1px solid black;
+	border-left: 1px solid black;
+	z-index: 32767;
+}
+	
+/*First level hovers*/
+#nav li a {
+	text-decoration: none;
+	font-weight: bold;
+	color: <cfoutput>#_site_menu_text_color#</cfoutput>;
+	padding: 2px;
+}
+	
+#nav li a:hover {
+	color: #E2144A; 
+	background: #f1f1f1;
+} 
+
+/*For IE to do hovers on list items*/
+#nav li:hover ul ul, #nav li:hover ul ul ul, #nav li.sfhover ul ul, #nav li.sfhover ul ul ul {
+	display:none;
+}
+	
+#nav li:hover ul, #nav li li:hover ul, #nav li li li:hover ul, #nav li.sfhover ul, #nav li li.sfhover ul, #nav li li li.sfhover ul { /* lists nested under hovered list items */
+	display:block;
+}	
+
+
+/*---The right menu---*/
+#rightmenu p{
+	padding: 10px 10px 0px 10px;
+	margin: 0px, 10px;
+	color: black;
+	font-size: x-small;
+}
+
+#supportsection {
+}
+
+#rightsection {
+	border-bottom: 1px solid #999;
+}
+
+#rightmenu ul { 
+	padding: 0px;
+	margin: 0px 0px 15px 25px;
+}
+/*---The main text section (middle)---*/
+#main p {
+	font-size: small;
+}
+
+#div_html_tooltips {
+	width: 400px;
+	background-color: #FFFFA8;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#div_html_tooltips p {
+	padding-top: 0px;
+	text-align: justify;
+}
+
+#pics {
+	margin: 20px 0px 10px 0px;
+}
+
+/*---Footer Section---*/	
+#restricted {
+	text-align:center;
+	font-size:x-small;
+}
+
+/*---Layout---*/
+<cfif (NOT _layout_using_tables)>
+	#header {
+		width: 990px;
+	}
+	
+	#marquee_header {
+		width: 990px;
+	}
+</cfif>
+
+#wrapper{
+	<cfif (NOT _layout_using_tables)>
+		width: 950px;
+	</cfif>
+	font-size:x-small;
+}
+
+#main {
+	padding:0px;
+	<cfif (NOT _layout_using_tables)>
+		margin: 0px 190px 0px 160px;
+		border-left: 1px solid #999;
+		border-right: 1px solid #999;
+	</cfif>
+}
+
+<cfif (NOT _layout_using_tables)>
+	#quicklinks {
+		width: 150px;
+		float: left;
+		font-size: xx-small;
+	}
+<cfelse>
+	#quicklinks {
+		margin-top: -12px;
+		font-size: xx-small;
+	}
+</cfif>
+
+#quicklinks_dragmark {
+}
+
+<cfif (NOT _layout_using_tables)>
+	#leftmenu_wrapper {
+		width: 150px;
+		float: left;
+	}
+
+	#leftmenu {
+		width: 150px;
+		float: left;
+	}
+
+	<cfif (_LayoutMode eq 1)>
+		#rightmenu {
+			position: relative;
+			top: 0px;
+			left: 0px;
+			width: 190px;
+		}
+		#rightmenu_wrapper {
+			position: absolute;
+			top: 88px;
+			left: 760px;
+			width: 190px;
+		}
+		#rightside_wrapper {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 190px;
+		}
+		#rightside_content {
+			position: relative;
+			top: 0px;
+			left: 0px;
+			width: 190px;
+		}
+	<cfelse>
+		#rightmenu_wrapper {
+			float: right;
+			width: 190px;
+		}
+	</cfif>
+<cfelse>
+	#rightside_content {
+		font-size: xx-small;
+	}
+</cfif>
+
+#footer {
+	<cfif (NOT _layout_using_tables)>
+		width: 990px;
+	</cfif>
+	clear: both;
+	margin: 0px;
+	padding: 0px;
+	border-top: 1px solid #003499;
+	background-color:#C9DCF5;
+	background-position:right;
+	background-image: url("<cfoutput>#_images_folder#</cfoutput>footer_bg.jpg");
+	background-repeat: repeat-y;
+}
+#footerRelease {
+	<cfif (NOT _layout_using_tables)>
+		width: 990px;
+	</cfif>
+	clear: both;
+	margin: 0px;
+	padding: 0px;
+	border-top: 1px solid #003499;
+	background-color:#C9DCF5;
+	background-position:right;
+	background-image: url("<cfoutput>#_images_folder#</cfoutput>footer_bg.jpg");
+	background-repeat: repeat-y;
+}
+
+<cfif (NOT _layout_using_tables)>
+	/*This helps force IE to support min-width command*/
+	#minwidthcontainer {width: 900px;}
+	.fixedwidth {width: 900px;} /* To avoid strange behaviors, this value should be identical to the minlimit variable in the script. */
+	.fluid {width: 100%;} 
+</cfif>
+
+.cascadingMenu {
+	font-size:9px;
+}
+
+.normalClass {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: xx-small;
+}
+
+.normalBoldClass {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: xx-small;
+	font-weight: bold;
+}

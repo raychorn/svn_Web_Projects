@@ -1,0 +1,296 @@
+/* StyleSheet.css */
+BODY {
+	margin: 0px;
+	padding: 0px;
+	background-color: white;
+	color: black;
+	font-family: Trebuchet MS, verdana, arial, sans-serif; 
+	font-size: 11px;
+	background-image: url(/app/flash/images/waterBubbleBlue.jpg);
+}
+
+.reassignCategoriesClass {
+	font-size: 10px;
+	color: black;
+	overflow: auto;
+	border: thin solid black;
+	height: 302px;
+	width: 300px;
+	max-height: 300px;
+}
+
+.forgotPasswordButtonClassFF {
+	font-size: 10px;
+	font-weight: bold;
+	text-align: left;
+	color: black;
+	width: 120px;
+}
+
+.loginButtonClassFF {
+	font-size: 10px;
+	font-weight: bold;
+	text-align: left;
+	color: black;
+	width: 45px;
+}
+
+.premiumButtonClassFF {
+	font-size: 10px;
+	font-weight: bold;
+	text-align: left;
+	color: black;
+	width: 120px;
+}
+
+.registerButtonClassFF {
+	font-size: 10px;
+	font-weight: bold;
+	text-align: left;
+	color: black;
+	width: 65px;
+}
+
+.registerButtonClass3FF {
+	font-size: 10px;
+	font-weight: bold;
+	text-align: left;
+	color: black;
+	width: 88px;
+}
+
+.buttonClass {
+	font-size: 10px;
+	font-weight: bold;
+}
+
+.buttonClassFF {
+	font-size: 10px;
+	font-weight: bold;
+}
+
+.buttonMenuClass {
+	font-size: 10px;
+	font-weight: bold;
+}
+
+.buttonMenuClassFF {
+	font-size: 10px;
+	text-align: left;
+}
+
+.buttonAdminClass {
+	font-size: 10px;
+	font-weight: bold;
+	background: Lime;
+}
+
+.buttonAdminFunctionClass {
+	font-size: 10px;
+	width: 60px;
+	background: Lime;
+}
+
+.buttonAdminFunctionClassFF {
+	font-size: 10px;
+	width: 60px;
+	background: Lime;
+}
+
+.buttonDirectoryClass {
+	font-size: 10px;
+	width: 350px;
+	text-align: left;
+}
+
+.buttonDirectoryClassFF {
+	font-size: 10px;
+	width: 350px;
+	text-align: left;
+}
+
+.buttonArchivesClass {
+	font-size: 10px;
+	width: 300px;
+	text-align: left;
+}
+
+.buttonArchivesClassFF {
+	font-size: 10px;
+	width: 300px;
+	text-align: left;
+}
+
+.boldPromptTextClass {
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.errorStatusClass {
+	font-size: 11px;
+	color: red;
+}
+
+.errorStatusBoldClass {
+	font-size: 11px;
+	color: red;
+	font-weight: bold;
+}
+
+.onholdStatusClass {
+	font-size: 11px;
+	color: green;
+}
+
+.onholdStatusBoldClass {
+	font-size: 11px;
+	color: green;
+	font-weight: bold;
+}
+
+.onholdStatusSmallBoldClass {
+	font-size: 11px;
+	color: green;
+	font-weight: bold;
+}
+
+.currentCategoryBoldClass {
+	font-size: 11px;
+	color: green;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.normalStatusClass {
+	font-size: 11px;
+	color: blue;
+}
+
+.adminAddEntryClass {
+	font-size: 11px;
+	color: blue;
+}
+
+.normalSmallStatusBoldClass {
+	font-size: 11px;
+	color: blue;
+	font-weight: bold;
+}
+
+.normalStatusBoldClass {
+	font-size: 11px;
+	color: blue;
+	font-weight: bold;
+}
+
+.normalx11StatusBoldClass {
+	font-size: 11px;
+	color: black;
+	font-weight: bold;
+}
+
+.menux11StatusBoldClass {
+	font-size: 11px;
+	color: white;
+	font-weight: bold;
+}
+
+.normalx11TextClass {
+	font-size: 11px;
+	color: black;
+}
+
+.normalSiteContentTextClass {
+	font-size: 11px;
+	color: black;
+}
+
+.normalDetailedContentTextClass {
+	font-size: 11px;
+	color: black;
+}
+
+.normalx9TextClass {
+	font-size: 10px;
+	color: black;
+}
+
+.normalx12StatusBoldClass {
+	font-size: 11px;
+	color: blue;
+	font-weight: bold;
+}
+
+.titlex12BoldClass {
+	font-size: 11px;
+	color: black;
+	font-weight: bold;
+}
+
+.titlex12GreenBoldClass {
+	font-size: 11px;
+	color: green;
+	font-weight: bold;
+}
+
+.titlex10GreenClass {
+	font-size: 10px;
+	color: green;
+}
+
+.titlex10BlueClass {
+	font-size: 10px;
+	color: blue;
+}
+
+.titlex12GreenClass {
+	font-size: 11px;
+	color: green;
+}
+
+.titlex12BlueClass {
+	font-size: 11px;
+	color: blue;
+}
+
+.titlex12BlueBoldClass {
+	font-size: 11px;
+	color: blue;
+	font-weight: bold;
+}
+
+.titlex12BlackBoldClass {
+	font-size: 11px;
+	color: black;
+	font-weight: bold;
+}
+
+.titleSmallBlackBoldClass {
+	font-size: 11px;
+	color: black;
+	font-weight: bold;
+}
+
+.textClass {
+	font-size: 10px;
+}
+
+.textSmallClass {
+	font-size: 10px;
+}
+
+.textBoldClass {
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.textEntryClass {
+	font-size: 10px;
+}
+
+.workingStatusClass {
+	font-size: 11px;
+	color: black;
+	font-weight: bold;
+}
+

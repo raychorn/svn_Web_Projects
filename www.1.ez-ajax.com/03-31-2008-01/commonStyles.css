@@ -1,0 +1,476 @@
+A 			{ color: #0000cc; font-family: Trebuchet MS, verdana, arial, sans-serif; text-decoration: none; font-weight: bold; } 
+A:link		{ color: #0000cc; text-decoration: none; font-weight: bold; } 
+A:visited	{ color: #0000cc; text-decoration: none; font-weight: bold; } 
+A:active	{ color: #99CC66; font-weight: bold; } 
+A:hover		{ color: black; background-color: silver; font-weight: bold; } 
+
+h1 {
+	font-family: Trebuchet MS, verdana,arial, sans-serif;
+	font-size: medium;
+	font-weight: bold;
+	margin: 0;
+	color: #000;
+}
+
+#div_PrimaryContentContainer {
+	background-color: #FFFF99;
+}
+
+#content {
+	float: left;
+	border-right:1px dotted #999;
+	margin-right:15px;
+	width: 700px;
+	margin-top: 15px;
+}
+
+#menu {
+	margin-left: 5px;
+	margin-top: 15px;
+}
+
+#blogText {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#banner {
+	font-family: Trebuchet MS, verdana,arial, sans-serif;
+	font-size: 22px;
+	font-weight: bold;
+	color: white;
+	background-color: #0000cc;
+	padding: 5px;
+}
+
+.bannerStats {
+	font-family: Trebuchet MS, verdana,arial, sans-serif;
+	font-size: xx-small;
+	font-weight: bold;
+	color: white;
+	background-color: #0000cc;
+	padding: 5px;
+}
+
+.bannerTable {
+	background-color: #0000cc;
+}
+
+.bannerWhiteTable {
+	background-color: white;
+}
+
+.td {
+	font-family: Trebuchet MS, verdana, arial, sans-serif; 
+	font-size: xx-small;
+	color: #000000; 
+	margin-left: 0px;
+}
+
+input, select, textarea {
+	font-family: Trebuchet MS, verdana, arial, sans-serif; 
+	font-size: xx-small;
+	color: #000000; 
+}
+
+.byline {
+	font-family: Trebuchet MS, verdana, arial, sans-serif; 
+	color: #000;
+	line-height: 135%;
+	margin: 0;
+	padding: 0 0 8px 0;
+}
+
+.menuTitle {
+	font-family: verdana, arial, sans-serif; 
+	font-size: xx-small;
+	background-color: #66ccff;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	padding: 5px;
+}
+
+.header, .header a {
+	font-family: verdana, arial, sans-serif; 
+	font-size: xx-small;
+	text-align: center;
+	font-weight: bold;
+}
+
+.calendar_table, .calendar_table a {
+	font-family: verdana, arial, sans-serif; 
+	font-size: xx-small;
+	text-align: center;
+	padding: 2px;
+	line-height: 14px;
+}
+
+.calendar_today {
+	background-color: yellow;
+}
+
+.menuBody {
+	font-family: verdana, arial, sans-serif; 
+	font-size: xx-small;
+	text-align: left;
+	padding: 2px;
+	line-height: 14px;
+}
+
+.menuBody A {
+	font-family: verdana, arial, sans-serif; 
+	font-size: xx-small;
+}
+
+.date {
+	font-family: Trebuchet MS, verdana, arial, sans-serif; 
+	font-size: xx-small;
+	color: #666; 
+	border:1px solid #999;
+	padding:5px;
+	margin-bottom:10px;
+	font-weight:normal;
+	width: 600px;
+}
+
+.blogHeader, .trackbackHeader, .commentHeader {
+	font-family: Trebuchet MS, verdana, arial, sans-serif; 
+	font-size: xx-small;
+	color: #666; 
+	border:1px solid #999;
+	padding:5px;
+	margin-bottom:10px;
+	font-weight:normal;
+}
+
+.rightMenu {
+	border:1px solid #999;
+}
+
+.rightMenuWide {
+/*	border:1px solid #999; */
+	width: 195px;
+	overflow-x: scroll;
+}
+
+.code {
+	font-family: courier;
+	font-size: xx-small;
+	color: black;
+	border: solid thin #0000cc;
+	background-color: #ffffcc;
+	overflow: auto;
+	max-height: 600px;
+}
+
+.codeCopyright {
+	font-family: courier;
+	font-size: xx-small;
+	color: black;
+	background-color: #ffffcc;
+}
+
+.code600 {
+	font-family: courier;
+	font-size: xx-small;
+	color: black;
+	border: solid thin #0000cc;
+	background-color: #ffffcc;
+	overflow: auto;
+	height: 600px;
+	max-height: 600px;
+}
+
+.codePrint {
+	font-family: courier;
+	font-size: xx-small;
+	color: black;
+	border: solid thin #0000cc;
+	background-color: #ffffcc;
+}
+
+.normalPrompt {
+	font-size: 11px;
+	color: black;
+}
+
+.normalBigPrompt {
+	font-size: medium;
+	color: black;
+	font-weight: bold;
+}
+
+.normalSmallPrompt {
+	font-size: 11px;
+	color: black;
+}
+
+.featuresText {
+	font-size: 11px;
+	color: black;
+}
+
+.normalBoldPrompt {
+	font-size: 11px;
+	font-weight: bold;
+	color: black;
+}
+
+.normalBoldBluePrompt {
+	font-size: 11px;
+	font-weight: bold;
+	color: blue;
+}
+
+.normalBluePrompt {
+	font-size: 11px;
+	color: blue;
+}
+
+.normalBoldGreenPrompt {
+	font-size: small;
+	font-weight: bold;
+	color: green;
+}
+
+.normalBoldGreenTmPrompt {
+	font-size: 8px;
+	font-weight: bold;
+	color: green;
+}
+
+.buttonClass {
+	font-size: xx-small;
+	font-weight: bold;
+	color: black;
+}
+
+.buttonClassFF {
+	font-size: xx-small;
+	font-weight: bold;
+	color: black;
+}
+
+.loginButtonClass {
+	font-size: xx-small;
+	font-weight: bold;
+	color: black;
+	width: 50px;
+}
+
+.forgotPasswordButtonClass {
+	font-size: xx-small;
+	font-weight: bold;
+	color: black;
+	width: 100px;
+}
+
+.premiumButtonClass {
+	font-size: xx-small;
+	font-weight: bold;
+	color: black;
+	width: 90px;
+}
+
+.registerButtonClass {
+	font-size: xx-small;
+	font-weight: bold;
+	color: black;
+	width: 65px;
+}
+
+.registerButtonClass2 {
+	font-size: xx-small;
+	font-weight: bold;
+	color: black;
+	width: 110px;
+}
+
+.registerButtonClass3 {
+	font-size: xx-small;
+	font-weight: bold;
+	color: black;
+	width: 88px;
+}
+
+.redBoldPrompt {
+	font-size: small;
+	font-weight: bold;
+	color: red;
+}
+
+.errorBoldPrompt {
+	font-size: small;
+	font-weight: bold;
+	color: red;
+}
+
+.redBlogArticleAccessBoldPrompt {
+	font-size: xx-small;
+	font-weight: bold;
+	color: red;
+	line-height: 1.1em;
+}
+
+.yellowBlogArticleAccessBoldPrompt {
+	font-size: xx-small;
+	font-weight: bold;
+	color: yellow;
+	line-height: 1.1em;
+}
+
+.onholdStatusBoldClass {
+	font-size: small;
+	color: green;
+	font-weight: bold;
+}
+
+.onholdStatusSmallBoldClass {
+	font-size: small;
+	color: green;
+	font-weight: bold;
+}
+
+.codeSmaller {
+	font-family: courier;
+	font-size: xx-small;
+	color: black;
+	border: solid thin #0000cc;
+	background-color: #ffffcc;
+	overflow: auto;
+	max-height: 200px;
+}
+
+.hackerSafeHoverClass {
+	font-size: xx-small;
+	font-weight: bold;
+	color: red;
+	background-color: #f3f6f9;
+}
+
+.logoImageHoverClass {
+	font-size: xx-small;
+	font-weight: bold;
+	color: red;
+	background-color: white;
+}
+
+.installProcessSelectedClass {
+	border: thin solid black;
+	background-color: cyan;
+	cursor:hand; cursor:pointer;
+}
+
+.installProcessUnSelectedClass {
+	border: thin solid silver;
+	background-color: white;
+	cursor:hand; cursor:pointer;
+}
+
+.installProcessHoverSelectedClass {
+	border: thin solid silver;
+	background-color: silver;
+	color: black;
+	cursor:hand; cursor:pointer;
+}
+
+.scrollableDivClass {
+	overflow: auto;
+	max-height: 300px;
+}
+
+#span_sysMessages_title {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.errorBigStatusBoldClass {
+	font-size: medium;
+	color: red;
+	font-weight: bold;
+}
+
+.smallRadioButton {
+	WIDTH: 1.5em; HEIGHT: 1.5em
+}
+
+.titlex14BoldClass {
+	font-size: medium;
+	color: black;
+	font-weight: bold;
+}
+
+.normalBigStatusBoldClass {
+	font-size: medium;
+	color: blue;
+	font-weight: bold;
+}
+
+.switchcontent {
+	background: #E3E6E8;
+}
+
+.paperBgColorClass {
+	background-color : #FFFACD;
+}
+
+.paperBgErrorColorClass {
+	background-color : #FF8080;
+}
+
+.code {
+	font-family: courier;
+	font-size: xx-small;
+	color: black;
+	border: solid thin #0000cc;
+	background-color: #ffffcc;
+	overflow: auto;
+	max-height: 200px;
+}
+
+.codePrint {
+	font-family: courier;
+	font-size: xx-small;
+	color: black;
+	border: solid thin #0000cc;
+	background-color: #ffffcc;
+}
+
+.codeSmall {
+	font-family: courier;
+	font-size: xx-small;
+	color: black;
+	border: solid thin #0000cc;
+	background-color: #ffffcc;
+	overflow: auto;
+	max-height: 200px;
+}
+
+.codeSmaller {
+	font-family: courier;
+	font-size: xx-small;
+	color: black;
+	border: solid thin #0000cc;
+	background-color: #ffffcc;
+	overflow: auto;
+	max-height: 200px;
+}
+
+.codeSmallerFF {
+	font-family: courier;
+	font-size: xx-small;
+	color: black;
+	border: solid thin #0000cc;
+	background-color: #ffffcc;
+	overflow: auto;
+}
+
+.codeSmallerNoBorder {
+	font-family: courier;
+	font-size: xx-small;
+	color: black;
+	background-color: #ffffcc;
+	overflow: auto;
+	max-height: 200px;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<title>upgradeLicense.html</title>
+	<link href="../StyleSheet.css" rel="stylesheet" type="text/css"> 
+	<link href="../style.css" rel="stylesheet" type="text/css"> 
+</head>
+
+<body>
+
+	<div id="div_contentContainer" style="margin: 10px 10px 10px 10px;"></div>
+
+	<script language="JavaScript1.2" type="text/javascript">
+		function theContent(id, sid) {
+			var _html = '';
+			
+			id = (((typeof id) == 'string') ? id : '');
+			sid = (((typeof sid) == 'string') ? sid : '');
+
+			_html += '<table width="95%" cellpadding="1" cellspacing="1">';
+			_html += '<tr>';
+
+			_html += '<td width="30%" valign="top" style="border-bottom: thin solid Black;">';
+
+			_html += '<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">';
+			_html += '<input type="hidden" name="cmd" value="_xclick">';
+			_html += '<input type="hidden" name="business" value="sales@ez-ajax.com">';
+			_html += '<input type="hidden" name="item_name" value="ezAJAX(tm) Community Edition Perpetual Runtime License #' + id + '/' + sid + '">';
+			_html += '<input type="hidden" name="item_number" value="ezAJAX-Community-Edition-Perpetual-Runtime-License #' + id + '/' + sid + '">';
+			_html += '<input type="hidden" name="amount" value="995.00">';
+			_html += '<input type="hidden" name="shipping" value="0.00">';
+			_html += '<input type="hidden" name="no_shipping" value="2">';
+			_html += '<input type="hidden" name="return" value="' + window.location.protocol + '//' + window.location.hostname + '/app/paymentAccepted.cfm">';
+			_html += '<input type="hidden" name="no_note" value="1">';
+			_html += '<input type="hidden" name="currency_code" value="USD">';
+			_html += '<input type="hidden" name="bn" value="PP-BuyNowBF">';
+			_html += '<input type="image" src="https://www.paypal.com/en_US/i/btn/x-click-butcc.gif" border="0" name="submit" alt="Perpetual License cost is $995/Server">';
+			_html += '<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">';
+			_html += '</form>';
+			_html += '<p align="left" class="normalPrompt"><small><i>HAL Smalltalker, Inc. is responsible for processing our payments.</i></small></p>';
+			
+			_html += '<img src="images/siteLogoLowerRightTransparent3-smaller2.gif" border="0">';
+
+			_html += '</td>';
+
+			_html += '<td width="*" style="border-bottom: thin solid Black;">';
+			_html += '<p align="justify" class="normalPrompt"><small><b>Click this button (to the left) to upgrade your Runtime License to the Community Edition Perpetual License for a cost of <b>$995</b>/Server.  This grants you the ability to use the Community Edition for a longer period than the 30-day Trial allows and it grants you the ability to use the Community Edition for certain Commercial Purposes in accordance with the <a href="' + js_urlCommunityEditionLicenseAgreement + '" target="_blank">License Agreement</a>.  Please allow 24-48 hours for your payment to be processed after which your updated Runtime License will be emailed to you.  It is our policy to issue an interim 90-day Runtime License upon receipt of your payment; we will issue your Perpetual Runtime License at the end of this interim 90-day period.</b></small></p>';
+			
+			_html += '</td>';
+
+			_html += '</tr>';
+
+			_html += '<tr>';
+
+			_html += '<td width="30%" valign="top">';
+
+			_html += '<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">';
+			_html += '<input type="hidden" name="cmd" value="_xclick">';
+			_html += '<input type="hidden" name="business" value="sales@ez-ajax.com">';
+			_html += '<input type="hidden" name="item_name" value="ezAJAX(tm) Enterprise Edition Perpetual Runtime License #' + id + '/' + sid + '">';
+			_html += '<input type="hidden" name="item_number" value="ezAJAX-Enterprise-Edition-Perpetual-Runtime-License #' + id + '/' + sid + '">';
+			_html += '<input type="hidden" name="amount" value="1995.00">';
+			_html += '<input type="hidden" name="shipping" value="0.00">';
+			_html += '<input type="hidden" name="no_shipping" value="2">';
+			_html += '<input type="hidden" name="return" value="' + window.location.protocol + '//' + window.location.hostname + '/app/paymentAccepted.cfm">';
+			_html += '<input type="hidden" name="no_note" value="1">';
+			_html += '<input type="hidden" name="currency_code" value="USD">';
+			_html += '<input type="hidden" name="bn" value="PP-BuyNowBF">';
+			_html += '<input type="image" src="https://www.paypal.com/en_US/i/btn/x-click-butcc.gif" border="0" name="submit" alt="Perpetual License cost is $1995/year/Server">';
+			_html += '<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">';
+			_html += '</form>';
+			_html += '<p align="left" class="normalPrompt"><small><i>HAL Smalltalker, Inc. is responsible for processing our payments.</i></small></p>';
+			
+			_html += '</td>';
+
+			_html += '<td width="*">';
+			_html += '<p align="justify" class="normalPrompt"><small><b>Click this button (to the left) to upgrade your Runtime License to the Enterprise Edition Perpetual License for a cost of <b>$1995</b>/year/Server.  This grants you the ability to use the Enterprise Edition for a longer period than the 30-day Trial allows and it grants you the ability to use the Enterprise Edition for certain Commercial Purposes in accordance with the <a href="' + js_urlCommunityEditionLicenseAgreement + '" target="_blank">License Agreement</a>.  Please allow 24-48 hours for your payment to be processed after which your updated Runtime License will be emailed to you.  It is our policy to issue an interim 90-day Runtime License upon receipt of your payment; we will issue your Perpetual Runtime License at the end of this interim 90-day period.</b></small></p>';
+			_html += '</td>';
+
+			_html += '</tr>';
+			_html += '</table>';
+			
+			return _html;
+		}
+		
+		var html = '';
+		var js_urlCommunityEditionLicenseAgreement = 'undefined';
+		try {
+			js_urlCommunityEditionLicenseAgreement = opener.js_urlCommunityEditionLicenseAgreement;
+		} catch (e) {
+			try {
+				js_urlCommunityEditionLicenseAgreement = parent.js_urlCommunityEditionLicenseAgreement;
+			} catch (e) {
+			};
+		};
+		var _beginUpgradeRuntimeLicense_id = 'undefined';
+		try {
+			_beginUpgradeRuntimeLicense_id = opener._beginUpgradeRuntimeLicense_id;
+		} catch (e) {
+			try {
+				_beginUpgradeRuntimeLicense_id = parent._beginUpgradeRuntimeLicense_id;
+			} catch (e) {
+			};
+		};
+		var _beginUpgradeRuntimeLicense_sid = 'undefined';
+		try {
+			_beginUpgradeRuntimeLicense_sid = opener._beginUpgradeRuntimeLicense_sid;
+		} catch (e) {
+			try {
+				_beginUpgradeRuntimeLicense_sid = parent._beginUpgradeRuntimeLicense_sid;
+			} catch (e) {
+			};
+		};
+		try {
+			html = theContent(_beginUpgradeRuntimeLicense_id, _beginUpgradeRuntimeLicense_sid);
+		} catch (e) { try { alert(opener.ezErrorExplainer(e)); } catch (e) { try { alert(parent.ezErrorExplainer(e)); } catch (e) { }; }; };
+
+		var oDiv = document.getElementById('div_contentContainer');
+		if (!!oDiv) {
+			oDiv.innerHTML = html;
+		}
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<title>hackerSafe.html</title>
+	<link href="../StyleSheet.css" rel="stylesheet" type="text/css"> 
+	
+	<script language="JavaScript1.2" src="../je0.$" type="text/javascript"></script>
+	<script language="JavaScript1.2" src="../ezAjax/loader.cfm?out=0" type="text/javascript"></script>
+</head>
+
+<body>
+
+<script language="JavaScript1.2" type="text/javascript">
+	var js_AUTH_USER = '';
+	var cf_Session_ID = '9945634D-FB0C-10AC-11CCEEFDB218E570';
+	var cf_cgiReferer = window.location.hostname;
+	var const_div_floating_debug_menu = '';
+	
+	url_sBasePath = window.location.protocol + '//' + window.location.hostname + '/ezAjax/ezAJAX_functions.cfm';
+
+	var oAJAXEngine = ezAJAXEngine.get$(url_sBasePath, false);
+
+	oAJAXEngine.bool_showServerBusyIndicator = true;
+
+//	var bool_useAbsoluteServerBusyPositioning = (oAJAXEngine.browser_is_ie);
+
+	oAJAXEngine.isXmlHttpPreferred = ((window.location.href.toUpperCase().indexOf('.ez-ajax.com') == -1) ? false : true);
+
+	ezAJAXEngine.js_global_varName = 'js$';
+
+	oAJAXEngine.ezAJAX_serverBusyCallback = function (cObj) { cObj.style.top = '5px'; cObj.style.left = (ezClientWidth() - parseInt(this.ezAJAX_serverBusy_width.toString()) - 5) + 'px'; };
+	oAJAXEngine.timeout = 30;
+	oAJAXEngine.hideFrameCallback = function () { /*ezAlert('oAJAXEngine.hideFrameCallback()');*/ };
+	oAJAXEngine.showFrameCallback = function () { /*ezAlert('oAJAXEngine.showFrameCallback()');*/ };
+	oAJAXEngine.ezAJAX_serverBusy_bgColor = '#FFFFA8';
+	
+	oAJAXEngine.createAJAXEngineCallback = function () { this.top = '20px'; this.height = '150px'; this.width = (ezClientWidth() - 40) + 'px'; };
+		
+	oAJAXEngine.showAJAXBeginsHrefCallback = function (hRef) { return oAJAXEngine._url; };
+	
+	oAJAXEngine.showAJAXBeginsStylesCallback = function (oStyles, cStyles) { cStyles.style.zIndex = 32767; };
+
+	oAJAXEngine.create();
+
+	initAJAXEngine(oAJAXEngine); // oAJAXEngine is the name of the default JavaScript variable that automatically contains a pointer to the default exAJAX<sup>(tm)</sup> Engine... You may create additional instances of the exAJAX<sup>(tm)</sup> Engine as desired however it is not necessary to create more than one instane for this object.
+
+//	oAJAXEngine.setDebugMode();
+	oAJAXEngine.setMethodGet();
+	oAJAXEngine.setReleaseMode();
+
+	function ezWindowOnLoadCallback() {
+	}
+
+	function ezWindowOnUnloadCallback() {
+	}
+				
+	function ezWindowOnReSizeCallback(_width, _height) {
+	}
+	
+	function ezWindowOnscrollCallback(top, left) {
+		return false;
+	}
+	
+	var cache_nodeCache = [];
+	
+	function handleGetContentForTab(qObj, nRecs, qStats, argsDict, qData1) {
+		var _CONTENT = '';
+		var _STATUS = '';
+
+		function searchForContentRecs(_ri, _dict, _rowCntName) {
+			_CONTENT = _dict.getValueFor('CONTENT');
+			_STATUS = _dict.getValueFor('STATUS');
+			_CONTENT = ((_CONTENT == null) ? '' : _CONTENT);
+			_STATUS = ((_STATUS == null) ? '' : _STATUS);
+		};
+
+		nRecs = ((nRecs != null) ? nRecs : -1);
+		if (!!qStats) {
+			if (!!argsDict) {
+				if (!!qData1) {
+					qData1.iterateRecObjs(searchForContentRecs);
+					
+					_iTab = argsDict.getValueFor('iTab');
+					_iTab = ((_iTab == null) ? -1 : _iTab);
+					
+					if ( (_iTab != -1) && (cache_nodeCache[_iTab] == null) ) {
+						ezAlert('_iTab = [' + _iTab + ']');
+	
+						try {
+							var iContent = oTabSystem1.addContentForTab(_iTab, '<font size="1">argsDict = [' + argsDict + ']</font>');
+						} catch(e) { ezAlertError('B.' + ezErrorExplainer(e)); } finally {	};
+
+						cache_nodeCache[_iTab] = _iTab;
+					}
+
+	//				ezAlert('_CONTENT = [' + _CONTENT + ']');
+	//				ezAlert('_STATUS = [' + _STATUS + ']');
+	//				ezAlert('argsDict = [' + argsDict + ']');
+				} else {
+					ezAlertError('Error - qData1 has an invalid value.');
+				}
+	
+				ezDictObj.remove$(argsDict.id);
+			} else {
+				ezAlertError('Error - argsDict has an invalid value.');
+			}
+		} else {
+			ezAlertError('Error - qStats has an invalid value.');
+		}
+	}
+
+	var oTabSystem1 = -1;
+	
+	function getProductContent() {
+		
+		var iTab = -1;
+		var iTabs = [];
+		var iContent = -1;
+
+		oTabSystem1 = ezTabsObj.get$(-1, -1, -1, -1); // div_TabSystemContainer
+		
+		oTabSystem1.onActivateTabsCallback = function (iTab) { var iPag = this.contentPageForTab(iTab); var sContent = this.contentForPageNum(iPag); var tabContent = this.tabAnchorForTabNum(iTab); oAJAXEngine.doAJAX('performGetContentForTab', 'handleGetContentForTab', 'iTab', iTab); /*alert('onActivateTabsCallback(' + iTab + ')' + ' iPag = [' + iPag + ']' + ', sContent.length = [' + sContent.length + ']' + ', tabContent = [' + tabContent + ']');*/ };
+
+		iTabs = oTabSystem1.addTab('Hacker Safe&#8482');
+		iTab1 = iTabs.pop();
+		iContent = oTabSystem1.addContentForTab(iTab1, '');
+
+		iTabs = oTabSystem1.addTab('Technology');
+		iContent = oTabSystem1.addContentForTab(iTabs.pop(), '');
+
+		iTabs = oTabSystem1.addTab('Benefits');
+		iContent = oTabSystem1.addContentForTab(iTabs.pop(), '');
+
+		iTabs = oTabSystem1.addTab('Latest Threats');
+		iContent = oTabSystem1.addContentForTab(iTabs.pop(), '');
+
+		iTabs = oTabSystem1.addTab('Pricing');
+		iContent = oTabSystem1.addContentForTab(iTabs.pop(), '');
+
+		iTabs = oTabSystem1.addTab('Sign Up');
+		iContent = oTabSystem1.addContentForTab(iTabs.pop(), '');
+
+		iTabs = oTabSystem1.addTab('Contact Us');
+		iContent = oTabSystem1.addContentForTab(iTabs.pop(), '');
+
+		oTabSystem1.activateTab(iTab1);
+	}
+
+//	oAJAXEngine.showFrame();
+	
+//	ezAlert(oAJAXEngine);
+</script>
+
+<table width="100%" border="1" bgcolor="#FFFFA8" cellpadding="1" cellspacing="1">
+	<tr>
+		<td>
+			<table width="100%" cellpadding="1" cellspacing="1">
+				<tr>
+					<td>
+						<table width="100%" cellpadding="2" cellspacing="2">
+							<tr>
+								<td align="right" valign="middle">
+									<h4 style="color: blue">Hacker Safe&#8482</h4>
+								</td>
+								<td align="left" valign="top">
+									<font size="1"><a href="http://www.ez-ajax.com" title="ezAJAX&#8482 - AJAX made Easy !" target="_blank">Powered by ezAJAX&#8482</a></font>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align="center">
+						<small>Hierarchical Applications Limited, Inc. has scanned this site and determined it to be<br><b><U>100% Guaranteed Hacker Safe</U></b>.</small>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p align="justify">We scan your site's content every day to ensure your site is protected from Hacker Intrusions.</p>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" align="left" height="400" background="images/hackerSafe_siteLogoSmallLowerRightTransparent.gif">
+						<div id="TabSystemContainer"></div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+<script language="JavaScript1.2" type="text/javascript">
+	getProductContent();
+	
+//	ezAlert(ezObjectExplainer(document));
+//	ezAlert(ezObjectExplainer(window.location));
+//	ezAlertHTML('<b>' + ezObjectExplainer(window.location) + '</b>');
+</script>
+
+</body>
+</html>

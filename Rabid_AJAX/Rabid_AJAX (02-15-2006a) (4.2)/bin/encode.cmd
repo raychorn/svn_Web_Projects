@@ -1,0 +1,1 @@
+jsmin.exe < "sample.js" > sample_.js

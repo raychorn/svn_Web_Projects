@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: /CFIDE/
+Disallow: /downloads*/
+Disallow: /images/
+Disallow: /ezAJAX/

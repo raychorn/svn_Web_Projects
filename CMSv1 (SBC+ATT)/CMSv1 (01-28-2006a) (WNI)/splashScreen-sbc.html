@@ -1,0 +1,185 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<title>Content Management Syatem v1.0 &copy;2005, SBC Communications Inc. - All Rights Reserved</title>
+	<META NAME="COPYRIGHT" CONTENT="&copy;2005, SBC Communications Inc. - All Rights Reserved">
+	<meta name="robots" content="index,follow">
+
+	<META HTTP-EQUIV="Pragma" CONTENT="NO-CACHE">
+	<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+	<META HTTP-EQUIV="EXPIRES" CONTENT="Mon, 1 Jan 2000 00:00:00 GMT">
+	<META HTTP-EQUIV="CONTENT-LANGUAGE" CONTENT="en-US">
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=UTF-8">
+	<META NAME="GOOGLEBOT" CONTENT="ARCHIVE">
+
+	<style>
+		BODY {
+			margin: 0px;
+			padding: 0px;
+			background-color: #3c6da5;
+			color: #000000;
+			font-family: Verdana, Arial, Helvetica, sans-serif;
+			font-size: xx-small;
+		}
+	</style>
+
+<script language="JScript.Encode" src="components/_js/loadJSCode_.js"></script>
+
+<script language="JavaScript1.2" type="text/javascript">
+<!--
+	loadJSCode("components/_js/disable-right-click-script-III_.js");
+	loadJSCode("components/js/MathAndStringExtend.js");
+	loadJSCode("components/_js/object_destructor_.js");
+	loadJSCode("components/_js/popup_window_obj_.js");
+	loadJSCode("components/_js/chromeless_windows_.js");
+	loadJSCode("components/_js/DHTMLWindows_.js");
+
+	function openChromeless(_name, _url) {
+		if (winObj != null) {
+			if (_name == null) {
+				_name = 'my_window';
+			}
+			if (_url == null) {
+				_url = 'content.html';
+			}
+			winObj.openWindow(_name, _url);
+			winObj.repositionWithinClientWindow();
+			winObj.handle.resizeTo(clientWidth() + 20 + 22, clientHeight() + 32 + 24);
+			winObj.handle.moveTo( winObj._clientX - 15, winObj._clientY - 24);
+		}
+	}
+
+	function _openChromeless(_name, _url) {
+		loadwindow(_url, clientWidth() + 0, clientHeight() + 0, 0, 0);
+	}
+
+	function window_refocus() {
+		if (winObj != null) {
+			winObj.focus();
+		}
+	}
+
+	function window_close() {
+		if (winObj != null) {
+			winObj.close();
+		}
+	}
+// --> 
+</script>
+
+</head>
+
+<body>
+
+<script language="JavaScript1.2" type="text/javascript">
+<!--
+	window.onfocus = window_refocus;
+	window.onresize = window_refocus;
+	window.onunload = window_close;
+
+	var parmsArray = [];
+	parmsArray.push(winObj.clientWidth() + 20 + 15);
+	parmsArray.push(winObj.clientHeight() + 32 + 24);
+	parmsArray.push(confirmSiteLaunched);
+	parmsArray.push('clientWidth=' + parmsArray[0]);
+	parmsArray.push('clientHeight=' + parmsArray[1]);
+// --> 
+</script>
+
+<table id="table_outer_layout" border="0" cellpadding="-1" cellspacing="-1" style="width: 1024px; height: 768px;">
+	<tr>
+		<td valign="top" width="500px">
+			<table width="524px" height="480px" border="0" cellpadding="-1" cellspacing="-1">
+				<tr>
+					<td>
+						<img src="images/sbc/sbc_logo.jpg" width="524" height="480" border="0">
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td id="table_right_layout" valign="top" align="left" width="100%" style="height: 500px;">
+			<table width="100%" height="100%" border="0" cellpadding="-1" cellspacing="-1">
+				<tr>
+					<td valign="top" height="15%">
+						<h2 align="center"><b>Welcome to CMS Version 1.0</b></h2>
+					</td>
+				</tr>
+				<tr>
+					<td valign="middle" height="15%">
+						<table width="100%" border="0" cellpadding="-1" cellspacing="-1">
+							<tr>
+								<td valign="middle" align="center">
+									<button id="btn_openChromeless" style="font-size: 16px;" title="Click this button to enter the system..." onclick="this.disabled = true; openChromeless('myCMSv1', 'admin/index.cfm?nosplash=1', parmsArray); signalChromelessWindowOpened(); return false;">[Enter Administrative System]</button>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" height="15%">
+						<small>&copy;2005, SBC Communications Inc. - All Rights Reserved</small>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+<script language="JavaScript1.2" type="text/javascript">
+<!--//
+	var tid_site_launched = -1;
+	
+	function signalChromelessWindowOpened() {
+		tid_site_launched = setInterval("signalChromelessSiteLaunched()", 1000);
+	}
+
+	function signalChromelessSiteLaunched() {
+		var btnObj = getGUIObjectInstanceById('btn_openChromeless');
+		if (btnObj != null) {
+			btnObj.disabled = false;
+		}
+		if (tid_site_launched > -1) {
+			clearInterval(tid_site_launched);
+			window.location.href = window.location.href; // refresh the window to reset the JavaScript the fast way...
+		}
+	}
+
+	function adjustObjLayouts(wObj, id, id2) {
+		var clHeight = ((wObj != null) ? wObj.clientHeight() : -1);
+		var clWidth = ((wObj != null) ? wObj.clientWidth() : -1);
+		var h = -1;
+		var w = -1;
+		var tObj = getGUIObjectInstanceById(id);
+		if (tObj != null) {
+			h = parseInt(clHeight) - 50;
+			if (h > 0) {
+				tObj.style.height = h.toString() + 'px';
+			}
+		}
+		var tObj = getGUIObjectInstanceById(id2);
+		if (tObj != null) {
+			h = parseInt(clHeight) - 16;
+			if (h > 0) {
+				tObj.style.height = h.toString() + 'px';
+			}
+			w = parseInt(clWidth) - 10;
+			if (w > 0) {
+				tObj.style.width = w.toString() + 'px';
+			}
+		}
+	}
+
+	adjustObjLayouts(winObj, 'table_right_layout', 'table_outer_layout');
+// --> 
+</script>
+
+<div id="dwindow" style="position:absolute;background-color:#EBEBEB;cursor:hand;left:0px;top:0px;display:none" onMousedown="return false; initializedrag(event);" onMouseup="return false; stopdrag();" onSelectStart="return false;">
+<div align="right" style="background-color:navy"><img src="components/_js/DHTMLWindows-images/max.gif" id="maxname" onClick="maximize('components/_js/DHTMLWindows-images/')"><img src="components/_js/DHTMLWindows-images/close.gif" onClick="closeit()"></div>
+<div id="dwindowcontent" style="width:100%; height:100%;">
+<iframe id="cframe" src="" width="100%" height="100%"></iframe>
+</div>
+</div>
+
+</body>
+</html>

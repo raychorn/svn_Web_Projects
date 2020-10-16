@@ -1,0 +1,136 @@
+/* CSS items the end-users might want to deal with */
+
+<cfset _datum = "
+	BODY {
+		margin: 0px;
+		padding: 0px;
+		background-color: ##FFFFFF;
+		color: ##000000;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: xx-small;
+	}
+	
+	A:link { color: ##8B7CFF; }
+	A:visited { color: ##483ACE; }
+	A:active { color: ##CC0000; }
+	A:hover { color: ##CC0000; }
+	
+	p {
+		padding: 10px 10px 0px 10px;
+		margin: 0px;
+		font-size: xx-small;
+		border: none;
+		text-align: left;
+	}
+	
+	h1 {
+		text-align: center;
+		font: bold x-large Arial, Helvetica, sans-serif;
+		margin: 0px;
+	}
+	
+	h2 {
+		text-align:left;
+		font: large Arial, Helvetica, sans-serif; 
+		color: ##787878;
+		padding: 10px 10px 0px 10px;
+		margin: 0px;
+		line-height:1;
+	}
+	
+	h3 {
+		text-align: center;
+		font: bold large Arial, Helvetica, sans-serif; 
+		color: ##0000CC;
+		padding: 10px 10px 0px 10px;
+		margin: 0px;
+		line-height:1;
+	}
+	
+	##welcome {
+		padding: 5px;
+		background-color: ##CEDFF6;
+		border-bottom: 1px solid ##999;
+	}
+	
+	##welcome p {
+		padding-top: 0px;
+		text-align: center;
+	}
+	
+	##main ul {
+		margin-top: 1px;
+		line-height: 1em;
+	}
+	
+	##main li {
+		margin-top: 5px;
+	}
+	
+	##quicklinks ul {
+		margin-top: 0px;
+		line-height: 1em;
+	}
+	
+	##quicklinks li {
+		margin-top: 8px;
+	}
+
+	##updates p{
+		font-size: x-small;
+		border-top: 1px solid ##999;
+		/*
+		background-color: silver;
+		*/
+		margin: 2px;
+		padding: 3px;
+	}
+
+">
+
+<!--- BEGIN: Handle the user defineable CSS from the database here, create it if the data is missing from the default css file called site-layout.css --->
+<cfif (_ReleaseMode eq 0) AND (_SecurityMode eq 0) AND (_LayoutMode eq 0) AND (_SQL2000Mode eq 0)>
+	<cfset _timeString = CommonCode.formattedDateTimeTZ(Now())>
+	<cfset _aSQL = CommonCode.sql_getCurrentRelease_rid( (_adminMode OR _LayoutMode), _ReleaseManagement)>
+	<cfset _bSQL = CommonCode.sql_getStagingRelease_rid( "False", _ReleaseManagement)>
+	<cfset _SQL_statement = "#_aSQL#
+		IF @prid IS NULL
+		BEGIN
+			#_bSQL#
+		END;
+		
+		DECLARE @CSSPgId as int;
+		SELECT @CSSPgId = (SELECT TOP 1 pageId FROM #_DynamicPageManagement# WHERE (pageName = '#siteCSSPage_symbol#') AND (rid = @prid));
+	
+		IF ( (@CSSPgId IS NULL) AND (@prid IS NOT NULL) )
+		BEGIN
+			SELECT @CSSPgId = (SELECT TOP 1 pageId FROM #_DynamicPageManagement# WHERE (rid = @prid) ORDER BY pageId DESC);
+			SELECT @CSSPgId = @CSSPgId + 1;
+			INSERT INTO #_DynamicPageManagement# (pageId, pageName, PageTitle, versionDateTime, rid)
+				VALUES (@CSSPgId, '#siteCSSPage_symbol#', '#siteCSSPage_symbol#', NULL, @prid);
+			INSERT INTO #_DynamicHTMLpad# (pageId, html, rid) VALUES (@CSSPgId, '#_datum#', @prid);
+			INSERT INTO #_ReleaseActivityLog# (rid, dateTime, comments) VALUES (@prid,GETDATE(),'SBCUID #VerifyUserSecurity2.userid#: Inserted New User-definable CSS into this Release on #_timeString#');
+		END;
+		
+		IF ( (@CSSPgId IS NOT NULL) AND (@prid IS NOT NULL) )
+		BEGIN
+			SELECT TOP 1 html as siteCSS FROM #_DynamicHTMLpad# WHERE (pageId = @CSSPgId) AND (rid = @prid);
+		END;
+	">
+	
+	<cfif Len(_SQL_statement) gt 0>
+		<CFQUERY username='#DSNUser#' password='#DSNPassword#' name="GetSiteCSS" datasource="#DSNSource#">
+			#PreserveSingleQuotes(_SQL_statement)#
+		</cfquery>
+		<cfset _SQL_statement = "">
+		
+		<cfif (IsDefined("GetSiteCSS")) AND (GetSiteCSS.recordCount gt 0)>
+			<cfif (IsDefined("GetSiteCSS.siteCSS")) AND (Len(Trim(GetSiteCSS.siteCSS)) gt 0)>
+				<cfset _datum = GetSiteCSS.siteCSS>
+			</cfif>
+		</cfif>
+	</cfif>
+</cfif>
+<!--- END! Handle the user defineable CSS from the database here, create it if the data is missing from the default css file called site-layout.css --->
+
+<cfoutput>#_datum#</cfoutput>
